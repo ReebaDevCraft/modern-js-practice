@@ -38,3 +38,9 @@ function capitalizeWords(str) {
 // Example usage
 console.log(capitalizeWords("hello reeba, good luck!")); // Output: "Hello Reeba, Good Luck!"
 
+function factorial(n) {
+    return n === 0 ? 1 : n * factorial(n - 1);
+}
+
+// Example usage
+console.log(factorial(5)); // Output: 120
