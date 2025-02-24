@@ -49,3 +49,13 @@ function factorial(n) {
 
 // Example usage
 console.log(factorial(5)); // Output: 120
+
+function isPalindrome(str) {
+    const cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+    return cleanedStr === cleanedStr.split('').reverse().join('');
+}
+
+// Example usage
+console.log(isPalindrome("madam")); // Output: true
+console.log(isPalindrome("Hello")); // Output: false
+console.log(isPalindrome("A man, a plan, a canal, Panama!")); // Output: true
