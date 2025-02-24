@@ -18,3 +18,15 @@ function getRandomHexColor() {
 
 // Example usage
 console.log(getRandomHexColor()); // Output: e.g. "#3a5ef2"
+
+function isPrime(num) {
+    if (num < 2) return false;
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+// Example usage
+console.log(isPrime(7)); // Output: true
+console.log(isPrime(10)); // Output: false
