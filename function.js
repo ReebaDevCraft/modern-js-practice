@@ -30,3 +30,11 @@ function isPrime(num) {
 // Example usage
 console.log(isPrime(7)); // Output: true
 console.log(isPrime(10)); // Output: false
+
+function capitalizeWords(str) {
+    return str.replace(/\b\w/g, char => char.toUpperCase());
+}
+
+// Example usage
+console.log(capitalizeWords("hello reeba, good luck!")); // Output: "Hello Reeba, Good Luck!"
+
