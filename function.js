@@ -44,3 +44,10 @@ function factorial(n) {
 
 // Example usage
 console.log(factorial(5)); // Output: 120
+
+function factorial(n) {
+    return n === 0 ? 1 : n * factorial(n - 1);
+}
+
+// Example usage
+console.log(factorial(5)); // Output: 120
